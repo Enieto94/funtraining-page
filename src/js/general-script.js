@@ -11,17 +11,21 @@ $(document).ready(function(){
 
 		if(imm < 18.5){
 
-			$("#diagnostico").html('Tu peso es menor al normal');
+			$("#diagnostico").html('Peso inferior al normal');
 		}else if(imm < 24.5){
-			$("#diagnostico").html('normal');
+			$("#diagnostico").html('Peso dentro de lo normal');
 		}else if(imm < 30){
-			$("#diagnostico").html('cuidado');
+			$("#diagnostico").html('Peso superior al normal');
 		}else if(imm > 30){
 			$("#diagnostico").html('Sobrepeso');
 
 		}
 
 	});
+
+	$("#burger-menu").click(function(){
+		$("header").toggleClass("active");
+	})
 
 	$("#btn-cerrar-popup").click(function(){
 		$("#popup-container").removeClass("active")
