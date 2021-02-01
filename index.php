@@ -19,6 +19,33 @@
 <body>
 
 	<div class="container-fluid">
+		<div id="popup-container">
+			<div id="btn-cerrar-popup">
+				<svg style="width:48px;height:48px" viewBox="0 0 24 24">
+					<path fill="#fff" d="M8.27,3L3,8.27V15.73L8.27,21H15.73L21,15.73V8.27L15.73,3M8.41,7L12,10.59L15.59,7L17,8.41L13.41,12L17,15.59L15.59,17L12,13.41L8.41,17L7,15.59L10.59,12L7,8.41" />
+				</svg>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-md-6 p-4" id="resultado-container">
+					<h2>Tu Índice de masa muscular es de <span class="azul" id="resultado-calculadora"></span> <div class="naranja" id="diagnostico"></div></h2>
+					<h3>Gracias por usar nuestra calculadora, si deseas una asesoría más personalizada déjanos tu nombre y correo electrónico para estar en contacto</h3>
+					<div class="row justify-content-center">
+						<div class="col-md-8">
+							<input class="form-control my-2" type="text" name="" id="" placeholder="Nombres y apellidos">
+							<input class="form-control my-2" type="email" name="" id="" placeholder="Correo electrónico">
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<button class="btn fondo-azul blanco m-0-auto">
+							ENVIAR
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
 
 		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/src/commons/header.php' ;?>
 
@@ -430,7 +457,7 @@
 
 									<h3>ESTATURA EN <br> CENTÍMETROS</h3>
 
-									<input type="text">
+									<input type="text" id="estatura">
 
 								</div>
 
@@ -438,7 +465,7 @@
 
 									<h3>PESO EN <br> KILOGRAMOS</h3>
 
-									<input type="text">
+									<input type="text" id="peso">
 
 								</div>
 

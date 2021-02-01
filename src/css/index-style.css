@@ -1,1 +1,436 @@
-#banner-img-container{width:100vw;height:100vh;background-image:url(/src/img/01.jpg);background-size:cover;position:relative;background-attachment:fixed}.bg-blanco-70{background-color:rgba(255,255,255,.5)}.bg-negro-70{background-color:rgba(0,0,0,.7);position:relative}.banner-layer{height:100%;width:100%;position:absolute;top:0;left:0;z-index:1}.banner-layer-row{height:50%}.banner-layer-row.bg-negro-70::after{content:"";position:absolute;bottom:-150px;left:calc(50% - 150px);width:300px;height:150px;border-bottom-left-radius:300px;border-bottom-right-radius:300px;background-color:rgba(0,0,0,.7);opacity:.85}#logo-banner{width:300px;margin-bottom:-300px;position:absolute;z-index:1}.btn-banner{position:absolute;z-index:4;bottom:5vh;left:calc(50% - 128px);margin:0 auto;color:#fff;font-weight:700;font-size:30px;border-radius:15px}#stars-svg{width:60px}hr{height:1px;background-color:#B7B7B7;width:calc(50% - 40px)}#servicios-bg{background-image:url(/src/img/servicios.jpg);background-size:cover;background-position:right;color:#fff}.img-servicios{height:60px;width:60px;margin:0 auto}#servicios-text{text-align:justify}.cifras{font-size:40px;color:#B7B7B7;font-family:"Montserrat-Bold"}.mes{font-family:"Montserrat-Light";color:#DADADA;font-size:20px}#img-imm{width:100%;margin-left:40px;margin-top:-40px}.trapecio{width:100%;height:0;border-right:0 solid transparent;border-left:0 solid transparent;border-bottom:650px solid #232323;display:flex;justify-content:center;align-items:center}.trapecio #img-calcula-imm{position:absolute;width:100%;top:0;left:0}#calcula-peso-container{position:absolute;background:rgba(0,0,0,.5);top:0;color:#fff}#btn-resultado-container{border:1px solid #0BC9FF;border-radius:15px}.btn-resultado{background:#0BC9FF;border-radius:15px}.borde-derecho-azul{border-right:1px solid #0BC9FF}input{border:0;outline:0;padding:20px;border-radius:15px}.frase{font-size:40px}.frase-gris{font-size:45px;color:#b7b7b7;font-weight:700}.frase-gris::before{content:"\201C";font-size:40px;font-family:Georgia,'Times New Roman',Times,serif!important;color:#B7B7B7}.frase-gris::after{content:"\201D";font-size:40px;font-family:Georgia,'Times New Roman',Times,serif!important;color:#B7B7B7}.plan-description{position:absolute;top:5%;left:0;right:0;bottom:0;margin:0 auto}.plan-description p{font-family:"Montserrat-Bold"}.plan-description img{width:35%}.plan-description span.blanco{font-size:26pt!important;line-height:100%}.plan-description span.naranja{font-size:50pt;line-height:100%}.planes-precio p{margin-bottom:0;font-family:"Montserrat-Bold"}.planes-precio p span.naranja{font-size:24px;font-weight:700}.planes-precio p span.precio{font-size:24px;color:#B7B7B7;font-weight:700}.plan-item{text-align:center;color:#B7B7B7;border-top:1px solid #b7b7b7}.plan-item p{width:80%;margin:0 auto;font-family:"Montserrat-Medium"}.btn-comprar{font-size:26px;color:#fff;background:#0bc9ff;border-radius:15px;font-weight:700}.cita-1{font-weight:700}cite:first-child span.cita-1.naranja:before{content:"\201C";font-size:40px;font-weight:700;color:#FF6D00}cite span.cita-1.azul:after{content:"\201D";font-size:40px;font-weight:700;color:#0bc9ff}.trapecio-invertido{width:100%;height:0;border-right:0 solid transparent;border-left:0 solid transparent;border-bottom:105vh solid #232323;display:flex;justify-content:center;align-items:center}.trapecio-invertido cite::before{content:"\201C";font-size:24px;color:#0bc0ff;font-weight:700}.trapecio-invertido cite::after{content:"\201D";font-size:24px;color:#FF6D00;font-weight:700}.trapecio-invertido cite{font-size:24px}.trapecio-invertido-img{position:absolute;right:0;bottom:0}.cita-2{position:absolute;top:5%;color:#FFF;font-weight:700;text-align:center}img.estrella{width:48px;height:48px}.borde-lateral-naranja{border-top:1px solid #FF6D00;border-bottom:1px solid #FF6D00;border-right:1px solid transparent;border-left:1px solid transparent}#plan-nutricional-img{width:125px;height:auto}#section-descuento{background:#232323}#section-descuento h2{font-size:30px;font-weight:700;line-height:100%;margin:0;margin-bottom:10px}#section-descuento h3{font-size:20px;font-weight:700;line-height:100%;margin:0;margin-bottom:10px}#section-descuento p{font-size:14px;font-weight:700;text-align:center;margin-bottom:10px}@media screen and (min-width:768px){#servicios-bg{height:50vh}.banner-layer-row.bg-negro-70::after{content:"";position:absolute;bottom:-250px;left:calc(50% - 250px);width:500px;height:250px;border-bottom-left-radius:500px;border-bottom-right-radius:500px;background-color:rgba(0,0,0,.7);opacity:.85}#logo-banner{width:400px;margin-bottom:-450px;position:absolute;z-index:1}.borde-lateral-naranja{border-right:1px solid #FF6D00;border-left:1px solid #FF6D00;border-top:1px solid transparent;border-bottom:1px solid transparent}.plan-nutricional-item h2,#plan-nutricional-title{font-size:50px;font-family:"Montserrat-Bold"}.plan-nutricional-item span{font-size:35px;font-family:"Montserrat-Bold"}#calcula-peso-container{top:10%;background:none}.trapecio{width:90%;border-left:400px solid transparent}.trapecio #img-calcula-imm{width:40%;top:-20px;left:1%}.plan-description{top:11%;left:0}.planes-precio{border-right:1px solid #0BC9FF;min-height:552px}.trapecio-invertido{width:90%;border-right:300px solid transparent}.trapecio-invertido cite::before,.trapecio-invertido cite::after{font-size:50px}.trapecio-invertido-img{position:absolute;right:5%;bottom:15%}.trapecio-invertido cite{font-size:50px}.cita-2{top:5%;left:10%;font-size:30px;text-align:center;color:#cecece}#section-descuento h2{font-size:70px;font-weight:700;line-height:100%;margin:0}#section-descuento h3{font-size:40px;font-weight:700;line-height:100%;margin:0}#section-descuento p{font-size:25px;font-weight:700;text-align:center}}@media screen and (min-height:768px){.cita-2{top:15%;left:15%}.trapecio{border-bottom:600px solid #232323}.trapecio-invertido{border-bottom:80vh solid #232323}.btn-banner{bottom:240px}}
+#banner-img-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/img/01.jpg);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.bg-blanco-70 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.bg-negro-70 {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+.banner-layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.banner-layer-row {
+    height: 50%;
+}
+.banner-layer-row.bg-negro-70::after {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 150px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.85;
+}
+#logo-banner {
+    width: 300px;
+    margin-bottom: -300px;
+    position: absolute;
+    z-index: 1;
+}
+.btn-banner {
+    position: absolute;
+    z-index: 4;
+    bottom: 5vh;
+    left: calc(50% - 128px);
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 15px;
+}
+#stars-svg {
+    width: 60px;
+}
+hr {
+    height: 1px;
+    background-color: #b7b7b7;
+    width: calc(50% - 40px);
+}
+#servicios-bg {
+    background-image: url(/src/img/servicios.jpg);
+    background-size: cover;
+    background-position: right;
+    color: #fff;
+}
+.img-servicios {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+}
+#servicios-text {
+    text-align: justify;
+}
+.cifras {
+    font-size: 40px;
+    color: #b7b7b7;
+    font-family: "Montserrat-Bold";
+}
+.mes {
+    font-family: "Montserrat-Light";
+    color: #dadada;
+    font-size: 20px;
+}
+#img-imm {
+    width: 100%;
+    margin-left: 40px;
+    margin-top: -40px;
+}
+.trapecio {
+    width: 100%;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-bottom: 650px solid #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trapecio #img-calcula-imm {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#calcula-peso-container {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    color: #fff;
+}
+#btn-resultado-container {
+    border: 1px solid #0bc9ff;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.btn-resultado {
+    background: #0bc9ff;
+    border-radius: 15px;
+}
+.borde-derecho-azul {
+    border-right: 1px solid #0bc9ff;
+}
+input {
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 15px;
+}
+.frase {
+    font-size: 40px;
+}
+.frase-gris {
+    font-size: 45px;
+    color: #b7b7b7;
+    font-weight: 700;
+}
+.frase-gris::before {
+    content: "\201C";
+    font-size: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif !important;
+    color: #b7b7b7;
+}
+.frase-gris::after {
+    content: "\201D";
+    font-size: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif !important;
+    color: #b7b7b7;
+}
+.plan-description {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.plan-description p {
+    font-family: "Montserrat-Bold";
+}
+.plan-description img {
+    width: 35%;
+}
+.plan-description span.blanco {
+    font-size: 26pt !important;
+    line-height: 100%;
+}
+.plan-description span.naranja {
+    font-size: 50pt;
+    line-height: 100%;
+}
+.planes-precio p {
+    margin-bottom: 0;
+    font-family: "Montserrat-Bold";
+}
+.planes-precio p span.naranja {
+    font-size: 24px;
+    font-weight: 700;
+}
+.planes-precio p span.precio {
+    font-size: 24px;
+    color: #b7b7b7;
+    font-weight: 700;
+}
+.plan-item {
+    text-align: center;
+    color: #b7b7b7;
+    border-top: 1px solid #b7b7b7;
+}
+.plan-item p {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Montserrat-Medium";
+}
+.btn-comprar {
+    font-size: 26px;
+    color: #fff;
+    background: #0bc9ff;
+    border-radius: 15px;
+    font-weight: 700;
+}
+.cita-1 {
+    font-weight: 700;
+}
+cite:first-child span.cita-1.naranja:before {
+    content: "\201C";
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff6d00;
+}
+cite span.cita-1.azul:after {
+    content: "\201D";
+    font-size: 40px;
+    font-weight: 700;
+    color: #0bc9ff;
+}
+.trapecio-invertido {
+    width: 100%;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-bottom: 105vh solid #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trapecio-invertido cite::before {
+    content: "\201C";
+    font-size: 24px;
+    color: #0bc0ff;
+    font-weight: 700;
+}
+.trapecio-invertido cite::after {
+    content: "\201D";
+    font-size: 24px;
+    color: #ff6d00;
+    font-weight: 700;
+}
+.trapecio-invertido cite {
+    font-size: 24px;
+}
+.trapecio-invertido-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.cita-2 {
+    position: absolute;
+    top: 5%;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+img.estrella {
+    width: 48px;
+    height: 48px;
+}
+.borde-lateral-naranja {
+    border-top: 1px solid #ff6d00;
+    border-bottom: 1px solid #ff6d00;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+#plan-nutricional-img {
+    width: 125px;
+    height: auto;
+}
+#section-descuento {
+    background: #232323;
+}
+#section-descuento h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#section-descuento h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#section-descuento p {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#popup-container{
+	position: fixed;
+	z-index: 101;
+	top: 0;
+	left: 0;
+	background: #0bc0ffbc;
+	display: none;
+	width: 100%;
+	height:100vh;
+}
+
+#popup-container.active{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#resultado-container{
+    background: #000000bc !important; 
+    color: #fff !important; 
+    border-radius: 15px !important;
+}
+
+#btn-cerrar-popup{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+    #servicios-bg {
+        height: 50vh;
+    }
+    .banner-layer-row.bg-negro-70::after {
+        content: "";
+        position: absolute;
+        bottom: -250px;
+        left: calc(50% - 250px);
+        width: 500px;
+        height: 250px;
+        border-bottom-left-radius: 500px;
+        border-bottom-right-radius: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0.85;
+    }
+    #logo-banner {
+        width: 400px;
+        margin-bottom: -450px;
+        position: absolute;
+        z-index: 1;
+    }
+    .borde-lateral-naranja {
+        border-right: 1px solid #ff6d00;
+        border-left: 1px solid #ff6d00;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+    }
+    .plan-nutricional-item h2,
+    #plan-nutricional-title {
+        font-size: 50px;
+        font-family: "Montserrat-Bold";
+    }
+    .plan-nutricional-item span {
+        font-size: 35px;
+        font-family: "Montserrat-Bold";
+    }
+    #calcula-peso-container {
+        top: 10%;
+        background: none;
+    }
+    .trapecio {
+        width: 90%;
+        border-left: 400px solid transparent;
+    }
+    .trapecio #img-calcula-imm {
+        width: 40%;
+        top: -20px;
+        left: 1%;
+    }
+    .plan-description {
+        top: 11%;
+        left: 0;
+    }
+    .planes-precio {
+        border-right: 1px solid #0bc9ff;
+        min-height: 552px;
+    }
+    .trapecio-invertido {
+        width: 90%;
+        border-right: 300px solid transparent;
+    }
+    .trapecio-invertido cite::before,
+    .trapecio-invertido cite::after {
+        font-size: 50px;
+    }
+    .trapecio-invertido-img {
+        position: absolute;
+        right: 5%;
+        bottom: 15%;
+    }
+    .trapecio-invertido cite {
+        font-size: 50px;
+    }
+    .cita-2 {
+        top: 5%;
+        left: 10%;
+        font-size: 30px;
+        text-align: center;
+        color: #cecece;
+    }
+    #section-descuento h2 {
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 100%;
+        margin: 0;
+    }
+    #section-descuento h3 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 100%;
+        margin: 0;
+    }
+    #section-descuento p {
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+@media screen and (min-height: 768px) {
+    .cita-2 {
+        top: 15%;
+        left: 15%;
+    }
+    .trapecio {
+        border-bottom: 600px solid #232323;
+    }
+    .trapecio-invertido {
+        border-bottom: 80vh solid #232323;
+    }
+    .btn-banner {
+        bottom: 240px;
+    }
+}
