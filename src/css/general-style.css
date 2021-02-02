@@ -158,6 +158,20 @@ header ul li {
     color: #0bc9ff !important;
 }
 
+.item-menu.login{
+    background: #0bc9ff !important;
+    color: #fff !important;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-menu.login:hover{
+    background: #ff6d00 !important;
+    color: #232323 !important;
+}
+
 ul {
     margin: 0;
     list-style: none;
