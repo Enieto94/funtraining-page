@@ -557,9 +557,9 @@
 
 									<img src="/src/img/plan.svg" alt="Funtraing Plan Classic" title="Funtraing Plan Classic">
 
-									<span class="blanco">FUN TRAINING</span>
+									<span class="blanco"><strong>FUN TRAINING</strong></span>
 
-									<span class="naranja">CLASSIC</span>
+									<span class="naranja"><strong>CLASSIC</strong></span>
 
 								</div>
 
@@ -641,9 +641,9 @@
 
 									<img src="/src/img/plan.svg" alt="Funtraining Plan Power" title="Funtraining Plan Power">
 
-									<span class="blanco mb-0">FUN TRAINING</span>
+									<span class="blanco mb-0"><strong>FUN TRAINING</strong></span>
 
-									<span class="naranja">POWER</span>
+									<span class="naranja"><strong>POWER</strong></span>
 
 								</div>
 
@@ -739,9 +739,9 @@
 
 									<img src="/src/img/plan.svg" alt="">
 
-									<span class="blanco mb-0">FUN TRAINING</span>
+									<span class="blanco mb-0"><strong>FUN TRAINING</strong></span>
 
-									<span class="naranja">HOME</span>
+									<span class="naranja"><strong>HOME</strong></span>
 
 								</div>
 
