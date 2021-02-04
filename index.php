@@ -32,12 +32,12 @@
 					<h3>Gracias por usar nuestra calculadora, si deseas una asesoría más personalizada déjanos tu nombre y correo electrónico para estar en contacto</h3>
 					<div class="row justify-content-center">
 						<div class="col-md-8">
-							<input class="form-control my-2" type="text" name="" id="" placeholder="Nombres y apellidos">
-							<input class="form-control my-2" type="email" name="" id="" placeholder="Correo electrónico">
+							<input class="form-control my-2" type="text" name="" id="nombre" placeholder="Nombres y apellidos">
+							<input class="form-control my-2" type="email" name="" id="correo" placeholder="Correo electrónico">
 						</div>
 					</div>
 					<div class="row justify-content-center">
-						<button class="btn fondo-azul blanco m-0-auto">
+						<button class="btn fondo-azul blanco m-0-auto" id="btnEnviar">
 							ENVIAR
 						</button>
 					</div>
