@@ -50,31 +50,16 @@
 		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/src/commons/header.php' ;?>
 
 		<main class="row">
-
 			<section class="col-12"  id="banner-img-container">
-
 				<div class="row">
-
 					<div class="banner-layer col-12">
-
 						<div class="row banner-layer-row bg-negro-70 justify-content-center align-items-center" >
-
 							<img id="logo-banner" src="/src/img/logo.png" alt="Funtraining Logo" title="Funtraining Logo">
-
-
-
 						</div>
-
-
 
 						<div class="row banner-layer-row bg-blanco-70" >
-
-
-
 						</div>
-
 					</div>
-
 				</div>
 
 

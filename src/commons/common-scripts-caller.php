@@ -3,3 +3,4 @@
 <script src="/src/libs/bootstrap/bootstrap.min.js"></script>
 <script src="/src/libs/bootstrap/bootstrap.min.js.map"></script>
 <script src="/src/js/general-script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
