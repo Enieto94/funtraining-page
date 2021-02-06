@@ -22,23 +22,28 @@ function ApiCall(endpointUri, httpMethod, dataToSend) {
 }
 
 $("#btn-resultado-container").click(function () {
-	let estatura = $("#estatura").val();
-	let peso = $("#peso").val();
-	let imm = parseFloat(peso) / (Math.pow(estatura,2) / 10000);
+	if($("#estatura").val() === '' && $("#peso").val() === ''){
+		alert('Los campos no pueden estar vacios');
+	}else{
+
+		let estatura = $("#estatura").val();
+		let peso = $("#peso").val();
+		let imm = parseFloat(peso) / (Math.pow(estatura,2) / 10000);
+		
+		$("#popup-container").addClass("active");
+		$("#resultado-calculadora").html(imm.toFixed(3));
 	
-	$("#popup-container").addClass("active");
-	$("#resultado-calculadora").html(imm.toFixed(3));
-
-	if (imm < 18.5) {
-
-		$("#diagnostico").html('Peso inferior al normal');
-	} else if (imm < 24.5) {
-		$("#diagnostico").html('Peso dentro de lo normal');
-	} else if (imm < 30) {
-		$("#diagnostico").html('Peso superior al normal');
-	} else if (imm > 30) {
-		$("#diagnostico").html('Sobrepeso');
-
+		if (imm < 18.5) {
+	
+			$("#diagnostico").html('Peso inferior al normal');
+		} else if (imm < 24.5) {
+			$("#diagnostico").html('Peso dentro de lo normal');
+		} else if (imm < 30) {
+			$("#diagnostico").html('Peso superior al normal');
+		} else if (imm > 30) {
+			$("#diagnostico").html('Sobrepeso');
+	
+		}
 	}
 
 });
