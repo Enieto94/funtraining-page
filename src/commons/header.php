@@ -8,7 +8,7 @@
 
 	<div class="social-icons">
 
-		<a href="http://" target="_blank" rel="noopener noreferrer">
+		<a href="https://www.facebook.com/funtraininggym" target="_blank" rel="noopener noreferrer">
 
 			<img src="/src/img/fb.svg" alt="">			
 
@@ -16,7 +16,7 @@
 
 		
 
-		<a href="http://" target="_blank" rel="noopener noreferrer">
+		<a href="https://api.whatsapp.com/send?phone=573235220130&text=Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20plan%20N" target="_blank" rel="noopener noreferrer">
 
 			<img src="/src/img/wa.svg" alt="">
 
@@ -24,7 +24,7 @@
 
 		
 
-		<a href="http://" target="_blank" rel="noopener noreferrer">
+		<a href="https://www.instagram.com/funtraininggym/" target="_blank" rel="noopener noreferrer">
 
 			<img src="/src/img/ig.svg" alt="">
 
