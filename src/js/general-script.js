@@ -1,5 +1,5 @@
 function ApiCall(endpointUri, httpMethod, dataToSend) {
-	const API_URL = '../../../api';
+	const API_URL = '/api';
 	// const API_URL = 'https://api.funtraining.net/api';
 
 	return fetch(`${API_URL}${endpointUri}`, {
@@ -33,15 +33,21 @@ $("#btn-resultado-container").click(function () {
 		$("#popup-container").addClass("active");
 		$("#resultado-calculadora").html(imm.toFixed(3));
 	
-		if (imm < 18.5) {
+		if (imm < 18.4) {
 	
-			$("#diagnostico").html('Peso inferior al normal');
-		} else if (imm < 24.5) {
-			$("#diagnostico").html('Peso dentro de lo normal');
+			$("#diagnostico").html('Peso bajo: Estar por debajo de un peso ideal no es estar saludable es hora de aumentar la masa muscular. Con FUN TRAINING consigue el peso ideal y alcanza tus objetivos. No lo pienses ');
+		} else if (imm < 24.9) {
+			$("#diagnostico").html('Peso Normal: Felicidades estas en un peso adecuado, no lo descuides sigue esforzandote. Con FUN TRAINING mantendrás tu peso y mejoraras tus habilidades. No lo pienses más ');
 		} else if (imm < 30) {
-			$("#diagnostico").html('Peso superior al normal');
-		} else if (imm > 30) {
-			$("#diagnostico").html('Sobrepeso');
+			$("#diagnostico").html('Sobrepeso:  superior al normalHora de prestarle atención a tus hábitos  diarios, realiza como mínimo actividad física 3 veces por semana. Con FUN TRAINING BEGIN dale un cambio a tu vida y mejora tu bienestar');
+		} else if (imm < 34.9) {
+			$("#diagnostico").html('Obesidad Grado 3: Un IMC elevado es un importante factor de riesgo de enfermedades no transmisibles. Con FUN TRAINING disminuye el riesgo de enfermedades y luce el cuerpo que quieres. No lo pienses más ');
+	
+		}else if (imm < 39) {
+			$("#diagnostico").html('Obesidad Grado II: Cuida y selecciona mejor tus alimentos en el día a día. Realiza actividad física con mayor frecuencia. En  FUN TRAINING encontraras el apoyo que necesitas para mejorar tus hábitos y lograr tus objetivos.');
+	
+		}else if (imm > 40) {
+			$("#diagnostico").html('Obesidad Grado III: ALERTA ROJA el exceso de peso puede ocasionar grandes problemas de salud. Inicia con pequeños cambios y actividad física a diario.  En  FUN TRAINING encontraras el apoyo  que necesitas para mejorar tus hábitos y lograr tus objetivos.');
 	
 		}
 	}

@@ -55,6 +55,10 @@ cite {
     font-family: "Montserrat-ExtraBold";
 }
 
+.pos-relative{
+    position: relative;
+}
+
 .bg-azul {
     background: #0bc9ff;
 }

@@ -95,22 +95,24 @@ hr {
     height: 0;
     border-right: 0 solid transparent;
     border-left: 0 solid transparent;
-    border-bottom: 650px solid #232323;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-bottom: 571px solid #232323;
 }
-.trapecio #img-calcula-imm {
-    position: absolute;
+
+#img-calcula-imm{
+    position: relative;
+    z-index: 0;
     width: 100%;
-    top: 0;
-    left: 0;
 }
+
 #calcula-peso-container {
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
     top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
+}
+input::placeholder, input{
+    text-align: center
 }
 #btn-resultado-container {
     border: 1px solid #0bc9ff;
@@ -127,36 +129,37 @@ hr {
 input {
     border: 0;
     outline: 0;
-    padding: 20px;
+    padding: 7px;
     border-radius: 15px;
 }
 .frase {
     font-size: 40px;
 }
 .frase-gris {
-    font-size: 45px;
+    font-size: 30px;
     color: #b7b7b7;
     font-weight: 700;
 }
 .frase-gris::before {
     content: "\201C";
-    font-size: 40px;
+    font-size: 30px;
     font-family: Georgia, "Times New Roman", Times, serif !important;
     color: #b7b7b7;
 }
 .frase-gris::after {
     content: "\201D";
-    font-size: 40px;
+    font-size: 30px;
     font-family: Georgia, "Times New Roman", Times, serif !important;
     color: #b7b7b7;
 }
 .plan-description {
     position: absolute;
-    top: 5%;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: 0 auto;
+    justify-content: center;
 }
 .plan-description p {
     font-family: "Montserrat-Bold";
@@ -165,25 +168,12 @@ input {
     width: 35%;
 }
 .plan-description span.blanco {
-    font-size: 26pt !important;
+    font-size: 22pt !important;
     line-height: 100%;
 }
 .plan-description span.naranja {
-    font-size: 50pt;
+    font-size: 45pt;
     line-height: 100%;
-}
-.planes-precio p {
-    margin-bottom: 0;
-    font-family: "Montserrat-Bold";
-}
-.planes-precio p span.naranja {
-    font-size: 24px;
-    font-weight: 700;
-}
-.planes-precio p span.precio {
-    font-size: 24px;
-    color: #b7b7b7;
-    font-weight: 700;
 }
 .plan-item {
     text-align: center;
@@ -206,13 +196,16 @@ input {
     font-weight: 700;
 }
 cite:first-child span.cita-1.naranja:before {
-    content: "\201C";
-    font-size: 40px;
-    font-weight: 700;
     color: #ff6d00;
 }
 cite span.cita-1.azul:after {
     content: "\201D";
+    font-size: 40px;
+    font-weight: 700;
+    color: #0bc9ff;
+}
+cite span.cita-1.azul:before {
+    content: "\201C";
     font-size: 40px;
     font-weight: 700;
     color: #0bc9ff;
@@ -222,7 +215,7 @@ cite span.cita-1.azul:after {
     height: 0;
     border-right: 0 solid transparent;
     border-left: 0 solid transparent;
-    border-bottom: 105vh solid #232323;
+    border-bottom: 119vh solid #232323;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,6 +313,7 @@ img.estrella {
 	right: 10px;
 	cursor: pointer;
 }
+
 @media screen and (min-width: 768px) {
     #servicios-bg {
         height: 50vh;
@@ -357,27 +351,23 @@ img.estrella {
         font-size: 35px;
         font-family: "Montserrat-Bold";
     }
-    #calcula-peso-container {
-        top: 10%;
-        background: none;
+
+    #img-calcula-imm{
+        position: absolute;
+        width: 40%;
+        left: 1%;
+        top: -20px;
+        z-index: 1;
     }
+    #calcula-peso-container{
+        margin-top: 10%;
+    }
+
     .trapecio {
         width: 90%;
         border-left: 400px solid transparent;
     }
-    .trapecio #img-calcula-imm {
-        width: 40%;
-        top: -20px;
-        left: 1%;
-    }
-    .plan-description {
-        top: 11%;
-        left: 0;
-    }
-    .planes-precio {
-        border-right: 1px solid #0bc9ff;
-        min-height: 552px;
-    }
+
     .trapecio-invertido {
         width: 90%;
         border-right: 300px solid transparent;
@@ -395,7 +385,7 @@ img.estrella {
         font-size: 50px;
     }
     .cita-2 {
-        top: 5%;
+        top: 10%;
         left: 10%;
         font-size: 30px;
         text-align: center;
@@ -421,14 +411,14 @@ img.estrella {
 }
 @media screen and (min-height: 768px) {
     .cita-2 {
-        top: 15%;
+        top: 13%;
         left: 15%;
     }
     .trapecio {
         border-bottom: 600px solid #232323;
     }
     .trapecio-invertido {
-        border-bottom: 80vh solid #232323;
+        border-bottom: 90vh solid #232323;
     }
     .btn-banner {
         bottom: 240px;
