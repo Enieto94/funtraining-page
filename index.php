@@ -28,12 +28,13 @@
 			</div>
 
 			<div class="row justify-content-center">
-				<div class="col-md-6 p-4" id="resultado-container">
-					<h4>Tu Índice de masa muscular es de <span class="azul" id="resultado-calculadora"></span>
+				<div class="col-md-6 p-4 text-center" id="resultado-container">
+					<h4 class="my-2">Tu Índice de masa muscular es de <span class="azul" id="resultado-calculadora"></span>
 						<div class="blanco" id="diagnostico"></div>
 					</h4>
-					<h5>Gracias por usar nuestra calculadora, si deseas una asesoría más personalizada déjanos tu nombre
-						y correo electrónico para estar en contacto</h5>
+					<h5 class="my-2">Gracias por usar nuestra calculadora, si deseas una asesoría más personalizada déjanos tu nombre
+						y correo electrónico para estar en contacto. </h5>
+					<h3 class="naranja my-2">HAZ TU PREREGISTRO</h3>
 					<div class="row justify-content-center">
 						<div class="col-md-8">
 							<input class="form-control my-2" type="text" name="" id="nombre"
@@ -1180,17 +1181,18 @@
 
 							</h2>
 
-							<h3>
+							<h3 class="mt-2">
 
-								Ingresa ahora y obtén hasta un <span class="naranja">10% de descuento</span> en todos
-								nuestros planes.
+								Lo que te impulsa, lo que más te motiva, <span class="azul">
+									es el deseo de encontrar tus límites, y
+									extenderlos.
+								</span>
 
 							</h3>
 
 							<p class="gris">
 
-								Lo que te impulsa, lo que más te motiva es el deseo de encontrar tus límites, y
-								extenderlos.
+								
 
 							</p>
 

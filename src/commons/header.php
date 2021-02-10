@@ -74,3 +74,7 @@
 	</ul>
 
 </header>
+
+<a href="http://" target="_blank" rel="noopener noreferrer" style="position: fixed; bottom: 20px;  right: 20px;z-index:100">
+	<img style="width: 48px; height: 48px;" src="/src/img/whatsapp-logo.png" alt="">
+</a>
