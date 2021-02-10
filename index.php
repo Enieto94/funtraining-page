@@ -807,13 +807,13 @@
 
 								<div class="plan-item py-3">
 
-									<p><strong>Valoraci+on </strong> y baremación de datos obtenidos.</p>
+									<p><strong>Valoración </strong> y baremación de datos obtenidos.</p>
 
 								</div>
 
 								<div class="plan-item py-3">
 
-									<p><strong>Baloración antropométrica </strong> (Peso, talla, perímetros, diámetros y
+									<p><strong>Valoración antropométrica </strong> (Peso, talla, perímetros, diámetros y
 										pliegues cutáneos). </p>
 
 								</div>
@@ -907,7 +907,7 @@
 								</div>
 								<div class="plan-item py-3">
 
-									<p>Entrenamientosacordes a tus necesidades y disponibilidad detiempo. Disfruta de
+									<p>Entrenamientos acordes a tus necesidades y disponibilidad detiempo. Disfruta de
 										tiempo. Disfruta de 9, 12 o 16 sesiones de entrenamiento en el mes. Con el
 										profesional que desees de nuestra familia y elige la hora del día en la que
 										prefieres realizarlo.</p>
