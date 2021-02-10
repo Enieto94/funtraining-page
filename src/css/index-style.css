@@ -170,6 +170,7 @@ input {
 .plan-description span.blanco {
     font-size: 22pt !important;
     line-height: 100%;
+    text-align: center;
 }
 .plan-description span.naranja {
     font-size: 45pt;
@@ -191,6 +192,23 @@ input {
     background: #0bc9ff;
     border-radius: 15px;
     font-weight: 700;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-comprar svg path{
+    fill: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-comprar:hover{
+    transform: scale(1.1);
+    background: #ff6d00;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+.btn-comprar:hover svg path{
+    /* fill:#000; */
+    transition: ease-in-out 0.3s;
 }
 .cita-1 {
     font-weight: 700;

@@ -551,7 +551,7 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<div class="row plan-container">
 							<div class="col-12 px-3 px-md-5">
 
 								<div class="plan-item py-3">
@@ -574,15 +574,8 @@
 
 								<div class="plan-item py-3">
 
-									<p><strong>Mejora capacidades físicas (Resistencia, Fuerza, Velocidad y
-											Movilidad)</strong> para para open season (sábado)</p>
-
-								</div>
-
-								<div class="plan-item py-3">
-
-									<p><strong>Mejora capacidades físicas (Resistencia, Fuerza, Velocidad y
-											Movilidad)</strong> para para open season (sábado)</p>
+									<p><strong>Mejora capacidades físicas </strong> (Resistencia, Fuerza, Velocidad y
+											Movilidad) para para open season (sábado)</p>
 
 								</div>
 
@@ -634,7 +627,7 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<div class="row plan-container">
 							<div class="col-12 px-3 px-md-5">
 
 								<div class="plan-item py-3">
@@ -719,7 +712,7 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<div class="row plan-container">
 							<div class="col-12 px-3 px-md-5">
 
 								<div class="plan-item py-3">
@@ -730,7 +723,7 @@
 
 								<div class="plan-item py-3">
 
-									<p><strong>Sesiones de entrenamiento </strong>Dirigidas a travésde la plataforma
+									<p><strong>Sesiones de entrenamiento </strong>Dirigidas a través de la plataforma
 										zoom empresarial. En tiempo real.</p>
 
 								</div>
@@ -801,7 +794,7 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<div class="row plan-container">
 
 							<div class="col-12 px-3 px-md-5">
 
@@ -878,7 +871,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row plan-container">
 							<div class="col-12 px-3 px-md-5">
 
 								<div class="plan-item py-3">
@@ -956,25 +949,25 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<div class="row plan-container">
 							<div class="col-12 px-3 px-md-5">
 
 								<div class="plan-item py-3">
 
-									<p><strong>Valoración </strong> y análisisdehábitos diarios.</p>
+									<p><strong>Valoración </strong> y análisis de hábitos diarios.</p>
 
 								</div>
 
 								<div class="plan-item py-3">
 
-									<p><strong>Planificación </strong> seguimiento ycontrolenlaingesta de alimentos al
+									<p><strong>Planificación </strong> seguimiento y control en la ingesta de alimentos al
 										día.</p>
 
 								</div>
 
 								<div class="plan-item py-3">
 
-									<p><strong>Variabilidad</strong> enlaingestadealimentos acorde a tus objetivos.</p>
+									<p><strong>Variabilidad</strong> en la ingesta de alimentos acorde a tus objetivos.</p>
 
 								</div>
 
