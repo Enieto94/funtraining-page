@@ -75,6 +75,6 @@
 
 </header>
 
-<a href="https://api.whatsapp.com/send?phone=573235220130&text=Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20plan%20N" target="_blank" rel="noopener noreferrer" style="position: fixed; bottom: 20px;  right: 20px;z-index:100">
+<a href="https://api.whatsapp.com/send?phone=573235220130&text=Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20%20servicios" target="_blank" rel="noopener noreferrer" style="position: fixed; bottom: 20px;  right: 20px;z-index:100">
 	<img style="width: 48px; height: 48px;" src="/src/img/whatsapp-logo.png" alt="">
 </a>
