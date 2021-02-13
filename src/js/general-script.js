@@ -1,6 +1,6 @@
 function ApiCall(endpointUri, httpMethod, dataToSend) {
 	// const API_URL = 'http://localhost:8000/api';
-	const API_URL = 'http://api.funtraining.net/api';
+	const API_URL = 'https://api.funtraining.net/api';
 
 	return axios.post(`${API_URL}${endpointUri}`, dataToSend)
 		.then((response) => {
