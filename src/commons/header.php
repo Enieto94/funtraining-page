@@ -68,7 +68,7 @@
 		
 		<li>
 
-			<a href="/login/" class="item-menu login">INICIAR SESIÓN</a>
+			<a href="https://clientes.funtraining.net/" class="item-menu login">INICIAR SESIÓN</a>
 
 		</li>
 	</ul>
