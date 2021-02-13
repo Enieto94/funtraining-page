@@ -48,7 +48,8 @@ $('#btnEnviar').click(async function (e) {
 	const correo = $('#correo').val();
 
 	try {
-		const serverResponse = await axios.post(`${API_URL}/newsletterusers`, {name: nombre, email: correo})
+		const serverResponse = await axios.post(`${API_URL}/newsletterusers`, { name: nombre, email: correo });
+
 		console.log("RESPONSE DATA: ", serverResponse.data);
 		console.log("RESPONSE STATUS: ", serverResponse.status);
 		console.log("RESPONSE STATUS_TEXT: ", serverResponse.statusText);
@@ -59,7 +60,11 @@ $('#btnEnviar').click(async function (e) {
 		console.log("NEWSLETTER: ", newsletterSuscribed);
 
 	} catch (error) {
-		swal("No se pudo cargar", `${newsletterSuscribed.name}, el registro ya existe `, "error");
 		console.warn(error);
+		swal({
+			icon: "error",
+			title: "Ups...",
+			text: "Ha surgido un error interno, intentalo mas tarde"
+		});
 	}
 });
