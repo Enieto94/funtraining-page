@@ -1,38 +1,5 @@
-function ApiCall(endpointUri, httpMethod, dataToSend) {
-	// const API_URL = 'http://localhost:8000/api';
-	const API_URL = 'https://api.funtraining.net/api';
-
-	return axios.post(`${API_URL}${endpointUri}`, dataToSend)
-		.then((response) => {
-			console.log("RESPONSE DATA: ", response.data);
-			console.log("RESPONSE STATUS: ", response.status);
-			console.log("RESPONSE STATUS_TEXT: ", response.statusText);
-			console.log("RESPONSE HEADERS: ", response.headers);
-			console.log("RESPONSE CONFIG: ", response.config);
-			return response.data;
-		})
-		.catch(error => {
-			return error;
-		});
-
-	// return fetch(`${API_URL}${endpointUri}`, {
-	// 	headers: {
-	// 		'Content-Type': 'application/json'
-	// 	},
-	// 	method: httpMethod, // or 'PUT'
-	// 	body: JSON.stringify(dataToSend), // data can be `string` or {object}!
-	// })
-	// .then((response) => response.json())
-	// .then((data) => {
-	// 	if (data.error) {
-	// 		throw error;
-	// 	}
-	// 	return data;
-	// })
-	// .catch(error => {
-	// 	return error;
-	// });
-}
+// const API_URL = 'http://localhost:8000/api';
+const API_URL = 'https://api.funtraining.net/api';
 
 $("#btn-resultado-container").click(function () {
 	if($("#estatura").val() === '' && $("#peso").val() === ''){
@@ -81,21 +48,15 @@ $('#btnEnviar').click(async function (e) {
 	const correo = $('#correo').val();
 
 	try {
-		// const { name, email, created_at } = await ApiCall(
-		const newsletterSuscribed = await ApiCall(
-			'/newsletterusers',
-			'POST',
-			{
-				name: nombre,
-				email: correo
-			}
-			
-			);
-			// alert(`Hola ${name}, gracias por suscribirte.`);
-			swal("Datos registrados", `Hola ${newsletterSuscribed.name}, gracias por suscribirte a nuestro newsletter`, "success");
-	
-			console.log("NEWSLETTER: ", newsletterSuscribed);
-		
+		const serverResponse = await axios.post(`${API_URL}/newsletterusers`, {name: nombre, email: correo})
+		console.log("RESPONSE DATA: ", serverResponse.data);
+		console.log("RESPONSE STATUS: ", serverResponse.status);
+		console.log("RESPONSE STATUS_TEXT: ", serverResponse.statusText);
+		console.log("RESPONSE HEADERS: ", serverResponse.headers);
+		console.log("RESPONSE CONFIG: ", serverResponse.config);
+
+		swal("Datos registrados", `Hola ${serverResponse.name}, gracias por suscribirte a nuestro newsletter`, "success");
+		console.log("NEWSLETTER: ", newsletterSuscribed);
 
 	} catch (error) {
 		swal("No se pudo cargar", `${newsletterSuscribed.name}, el registro ya existe `, "error");
