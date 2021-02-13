@@ -849,7 +849,7 @@
 
 									<span class="blanco mb-0"><strong>FUN TRAINING</strong></span>
 
-									<span class="naranja"><strong>PERSONAL ADVICE</strong></span>
+									<span class="naranja text-center"><strong>PERSONAL ADVICE</strong></span>
 
 								</div>
 							</div>
