@@ -2,24 +2,36 @@ function ApiCall(endpointUri, httpMethod, dataToSend) {
 	// const API_URL = 'http://localhost:8000/api';
 	const API_URL = 'http://api.funtraining.net/api';
 
-	return fetch(`${API_URL}${endpointUri}`, {
-		headers: {
-			'Content-Type': 'application/json'
-			
-		},
-		method: httpMethod, // or 'PUT'
-		body: JSON.stringify(dataToSend), // data can be `string` or {object}!
-	})
-	.then((response) => response.json())
-	.then((data) => {
-		if (data.error) {
-			throw error;
-		}
-		return data;
-	})
-	.catch(error => {
-		return error;
-	});
+	return axios.post(`${API_URL}${endpointUri}`, dataToSend)
+		.then((response) => {
+			console.log("RESPONSE DATA: ", response.data);
+			console.log("RESPONSE STATUS: ", response.status);
+			console.log("RESPONSE STATUS_TEXT: ", response.statusText);
+			console.log("RESPONSE HEADERS: ", response.headers);
+			console.log("RESPONSE CONFIG: ", response.config);
+			return response.data;
+		})
+		.catch(error => {
+			return error;
+		});
+
+	// return fetch(`${API_URL}${endpointUri}`, {
+	// 	headers: {
+	// 		'Content-Type': 'application/json'
+	// 	},
+	// 	method: httpMethod, // or 'PUT'
+	// 	body: JSON.stringify(dataToSend), // data can be `string` or {object}!
+	// })
+	// .then((response) => response.json())
+	// .then((data) => {
+	// 	if (data.error) {
+	// 		throw error;
+	// 	}
+	// 	return data;
+	// })
+	// .catch(error => {
+	// 	return error;
+	// });
 }
 
 $("#btn-resultado-container").click(function () {
