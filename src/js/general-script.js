@@ -19,7 +19,7 @@ $("#btn-resultado-container").click(function () {
 		} else if (imm < 24.9) {
 			$("#diagnostico").html('Peso Normal: Felicidades estas en un peso adecuado, no lo descuides sigue esforzándote. <br> <br> Con <span class="naranja">FUN TRAINING</span>  Mantendrás tu peso y mejoraras tus habilidades. No lo pienses más ');
 		} else if (imm < 30) {
-			$("#diagnostico").html('Sobrepeso:  superior al normalHora de prestarle atención a tus hábitos  diarios, realiza como mínimo actividad física 3 veces por semana.  <br> <br> Con <span class="naranja">FUN TRAINING</span> BEGIN dale un cambio a tu vida y mejora tu bienestar');
+			$("#diagnostico").html('Sobrepeso superior al normal. Es Hora de prestarle atención a tus hábitos  diarios, realiza como mínimo actividad física 3 veces por semana.  <br> <br> Con <span class="naranja">FUN TRAINING</span> BALANCE dale un cambio a tu vida y mejora tu bienestar');
 		} else if (imm < 34.9) {
 			$("#diagnostico").html('Obesidad Grado 3: Un IMC elevado es un importante factor de riesgo de enfermedades no transmisibles. <br> <br> Con <span class="naranja">FUN TRAINING</span> disminuye el riesgo de enfermedades y luce el cuerpo que quieres. No lo pienses más ');
 	
@@ -50,14 +50,13 @@ $('#btnEnviar').click(async function (e) {
 	try {
 		const serverResponse = await axios.post(`${API_URL}/newsletterusers`, { name: nombre, email: correo });
 
-		console.log("RESPONSE DATA: ", serverResponse.data);
-		console.log("RESPONSE STATUS: ", serverResponse.status);
-		console.log("RESPONSE STATUS_TEXT: ", serverResponse.statusText);
-		console.log("RESPONSE HEADERS: ", serverResponse.headers);
-		console.log("RESPONSE CONFIG: ", serverResponse.config);
+		// console.log("RESPONSE DATA: ", serverResponse.data);
+		// console.log("RESPONSE STATUS: ", serverResponse.status);
+		// console.log("RESPONSE STATUS_TEXT: ", serverResponse.statusText);
+		// console.log("RESPONSE HEADERS: ", serverResponse.headers);
+		// console.log("RESPONSE CONFIG: ", serverResponse.config);
 
-		swal("Datos registrados", `Hola ${serverResponse.name}, gracias por suscribirte a nuestro newsletter`, "success");
-		console.log("NEWSLETTER: ", newsletterSuscribed);
+		swal("Datos registrados", `Hola ${serverResponse.data.name}, gracias por suscribirte a nuestro newsletter`, "success");
 
 	} catch (error) {
 		console.warn(error);

@@ -543,7 +543,7 @@
 
 									<span class="blanco"><strong>FUN TRAINING</strong></span>
 
-									<span class="naranja"><strong>CLASSIC</strong></span>
+									<span class="naranja"><strong>BALANCE</strong></span>
 
 								</div>
 
@@ -555,37 +555,21 @@
 
 								<div class="plan-item py-3">
 
-									<p><strong>12 sesiones</strong> de entrenamiento semipersonalizado por mes.</p>
+									<p><strong>12 sesiones</strong> de entrenamiento funcional dirigido por mes. Sin restricciones</p>
 
 								</div>
 
 								<div class="plan-item py-3">
 
-									<p><strong>1 entrada semanal</strong> para para open season (sábado)</p>
+									<p>Sesiones de entrenamiento funcional dirigido por mes.<strong>Sin restricciones.</strong></p>
 
 								</div>
 
 								<div class="plan-item py-3">
 
-									<p><strong>Duración de 60 minutos</strong> para para open season (sábado)</p>
+									<p><strong>Mejora capacidades física</strong> (Resistencia, Fuerza, Velocidad y Movilidad)</p>
 
 								</div>
-
-								<div class="plan-item py-3">
-
-									<p><strong>Mejora capacidades físicas </strong> (Resistencia, Fuerza, Velocidad y
-											Movilidad) para para open season (sábado)</p>
-
-								</div>
-
-								<div class="plan-item py-3">
-
-									<p><strong>Disfruta</strong> la variedad en los horarios desde las 5 de la mañana
-										hasta las 10 de la noche.</p>
-
-								</div>
-
-
 
 							</div>
 
@@ -863,9 +847,9 @@
 									<img src="/src/img/plan.svg" alt="Funtraining Plan Power"
 										title="Funtraining Plan Power">
 
-									<span class="blanco mb-0"><strong>FUNCTIONAL COACHING</strong></span>
+									<span class="blanco mb-0"><strong>FUN TRAINING</strong></span>
 
-									<span class="naranja"><strong>SESSION</strong></span>
+									<span class="naranja"><strong>PERSONAL ADVICE</strong></span>
 
 								</div>
 							</div>
@@ -1048,7 +1032,7 @@
 
 
 
-			<div class="col-12 my-5">
+			<!-- <section class="col-12 my-5">
 
 				<div class="row justify-content-center">
 
@@ -1147,9 +1131,7 @@
 
 				</div>
 
-			</div>
-
-
+			</section> -->
 
 			<section class="col-12" id="section-descuento">
 
