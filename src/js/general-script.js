@@ -1,5 +1,5 @@
-// const API_URL = 'http://localhost:8000/api';
-const API_URL = 'https://api.funtraining.net/api';
+const API_URL = 'http://localhost:8000/api';
+// const API_URL = 'https://api.funtraining.net/api';
 
 $("#btn-resultado-container").click(function () {
 	if($("#estatura").val() === '' && $("#peso").val() === ''){
@@ -50,11 +50,11 @@ $('#btnEnviar').click(async function (e) {
 	try {
 		const serverResponse = await axios.post(`${API_URL}/newsletterusers`, { name: nombre, email: correo });
 
-		// console.log("RESPONSE DATA: ", serverResponse.data);
-		// console.log("RESPONSE STATUS: ", serverResponse.status);
-		// console.log("RESPONSE STATUS_TEXT: ", serverResponse.statusText);
-		// console.log("RESPONSE HEADERS: ", serverResponse.headers);
-		// console.log("RESPONSE CONFIG: ", serverResponse.config);
+		console.log("RESPONSE DATA: ", serverResponse.data);
+		console.log("RESPONSE STATUS: ", serverResponse.status);
+		console.log("RESPONSE STATUS_TEXT: ", serverResponse.statusText);
+		console.log("RESPONSE HEADERS: ", serverResponse.headers);
+		console.log("RESPONSE CONFIG: ", serverResponse.config);
 
 		swal("Datos registrados", `Hola ${serverResponse.data.name}, gracias por suscribirte a nuestro newsletter`, "success");
 
