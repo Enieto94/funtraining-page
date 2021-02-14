@@ -339,18 +339,18 @@ img.estrella {
     .banner-layer-row.bg-negro-70::after {
         content: "";
         position: absolute;
-        bottom: -250px;
-        left: calc(50% - 250px);
-        width: 500px;
-        height: 250px;
-        border-bottom-left-radius: 500px;
-        border-bottom-right-radius: 500px;
+        bottom: -200px;
+        left: calc(50% - 200px);
+        width: 400px;
+        height: 200px;
+        border-bottom-left-radius: 400px;
+        border-bottom-right-radius: 400px;
         background-color: rgba(0, 0, 0, 0.7);
         opacity: 0.85;
     }
     #logo-banner {
         width: 400px;
-        margin-bottom: -450px;
+        margin-bottom: -225px;
         position: absolute;
         z-index: 1;
     }
@@ -440,5 +440,11 @@ img.estrella {
     }
     .btn-banner {
         bottom: 240px;
+    }
+}
+
+@media screen and(min-height: 768px){
+    #logo-banner{
+        margin-bottom: -350px !important;
     }
 }

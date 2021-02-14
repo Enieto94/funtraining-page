@@ -22,10 +22,10 @@ main.row{
     box-shadow: 2px 2px #232323;
     max-width: 150px;
 }
-.trainer-car
 
 hr{
-    background:#0BC9FF;
+    background: #0BC9FF;
+    margin: 17px 0;
 }
 h2{
     font-size: 18px;

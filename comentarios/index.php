@@ -26,7 +26,7 @@
                 <section class="row align-items-center">
                     <div class="col-md-8">
                         <div class="row justify-content-center">
-                            <img src="/src/img/f1.png" alt="" style="width: 50%;max-height: 80vh;">
+                            <img src="/src/img/W3.jpg" alt="" style="width: 50%;max-height: 80vh;">
                         </div>
                     </div>
                     <div class="col-md-4">
