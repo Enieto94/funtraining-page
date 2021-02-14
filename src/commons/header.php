@@ -56,12 +56,6 @@
 
 		<li>
 
-			<a href="/servicios/" class="item-menu">SERVICIOS</a>
-
-		</li>
-
-		<li>
-
 			<a href="/contactenos/" class="item-menu">CONTACTENOS</a>
 
 		</li>
