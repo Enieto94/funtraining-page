@@ -1,0 +1,7 @@
+main.row{
+    margin-top: 55px;
+}
+
+input, input::placeholder{
+    text-align: center;
+}

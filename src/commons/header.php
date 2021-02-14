@@ -44,25 +44,25 @@
 
 		<li>
 
-			<a href="/" class="item-menu">ENTRENADORES</a>
+			<a href="/entrenadores/" class="item-menu">ENTRENADORES</a>
 
 		</li>
 
 		<li>
 
-			<a href="/" class="item-menu">COMENTARIOS</a>
+			<a href="/comentarios/" class="item-menu">COMENTARIOS</a>
 
 		</li>
 
 		<li>
 
-			<a href="/" class="item-menu">SERVICIOS</a>
+			<a href="/servicios/" class="item-menu">SERVICIOS</a>
 
 		</li>
 
 		<li>
 
-			<a href="/" class="item-menu">CONTACTENOS</a>
+			<a href="/contactenos/" class="item-menu">CONTACTENOS</a>
 
 		</li>
 		
