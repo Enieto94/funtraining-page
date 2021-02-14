@@ -39,7 +39,7 @@
                                 </p>
                                 <hr>
                                 <button class="btn btn-perfil-entrenador">
-                                    PERFIL
+                                    <img src="/src/img/logo.png" alt="" class="logo-btn">
                                 </button>
                             </div>
         
@@ -51,7 +51,7 @@
                                 </p>
                                 <hr>
                                 <button class="btn btn-perfil-entrenador">
-                                    PERFIL
+                                    <img src="/src/img/logo.png" alt="" class="logo-btn">
                                 </button>
                             </div>
         
@@ -63,7 +63,7 @@
                                 </p>
                                 <hr>
                                 <button class="btn btn-perfil-entrenador">
-                                    PERFIL
+                                    <img src="/src/img/logo.png" alt="" class="logo-btn">
                                 </button>
                             </div>
         
@@ -75,7 +75,7 @@
                                 </p>
                                 <hr>
                                 <button class="btn btn-perfil-entrenador">
-                                    PERFIL
+                                    <img src="/src/img/logo.png" alt="" class="logo-btn">
                                 </button>
                             </div>
                         </div>
