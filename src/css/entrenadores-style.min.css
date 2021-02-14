@@ -30,9 +30,7 @@ hr{
 h2{
     font-size: 18px;
 }
-p{
-    font-size: 25px;
-}
+
 @media screen and (min-width: 768px){
     h2{
         font-size: 48px;
