@@ -7,8 +7,8 @@ $("#btn-enviar").click(function () {
         $("#correo").notify("El campo no debe ir vacío", { position: "right" });
     } else if ($("#asunto").val() == "") {
         $("#asunto").notify("El campo no debe ir vacío", { position: "right" });
-    } else if ($(".servicio").val() == "") {
-        $(".servicio").notify("El campo no debe ir vacío", { position: "right" });
+    } else if ($("#servicio").val() == "") {
+        $("#servicio").notify("El campo no debe ir vacío", { position: "right" });
     } else if ($("#mensaje").val() == "") {
         $("#mensaje").notify("El campo no debe ir vacío", { position: "right" });
     }else {
