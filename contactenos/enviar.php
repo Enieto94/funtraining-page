@@ -49,8 +49,8 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->Host = "mail.funtraining.net"; //servidor smtp, esto lo puedes dejar igual
     $mail->Port = 465; //puerto smtp de gmail, tambien lo puedes dejar igual
     $mail->Username = 'contacto@funtraining.net';  // Tu correo gmail
-    $mail->Password = '.Ykust649 _'; // Tu contrasena gmail
-    $mail->FromName = 'edwin nieto'; // 
+    $mail->Password = 'NVeKfxA1m^G1'; // Tu contrasena gmail
+    $mail->FromName = 'Contacto Funtraining'; // 
     $mail->From = 'contacto@funtraining.net'; //email de remitente desde donde se envía el correo, este caso para evitar spam es el mismo que tu correo gmail
     
     if ($mail->Send())
