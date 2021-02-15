@@ -1201,6 +1201,7 @@
 	</div>
 
 	<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/src/commons/common-scripts-caller.php';?>
+	<script src="/src/libs/notify/notify.min.js"></script>
 
 </body>
 
