@@ -25,8 +25,8 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 }else{
 
 
-    require $_SERVER["DOCUMENT_ROOT"].'/src/libs/phpmailer/class.phpmailer.php';
-    require $_SERVER["DOCUMENT_ROOT"].'/src/libs/phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
+    require 'phpmailer/class.phpmailer.php';
+    require 'phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
     $mail = new PHPMailer();
 
     $mail->From     = $Email;
