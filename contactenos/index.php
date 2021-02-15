@@ -32,24 +32,24 @@
 					</div>
 
 					<form action="enviar.php" enctype="multipart/form-data" method="POST" name="contactenos" class="col-10 col-md-5" >
-						<input type="text" class="form-control my-2" placeholder="Nombres Completos" name="nombres" id="nombres">
-						<input type="text" class="form-control my-2" placeholder="Email" name="correo" id="correo">
-						<input type="text" class="form-control my-2" placeholder="Asunto" name="asunto" id="asunto">
-						<select class="form-control my-2 " name="servicio" id="servicio">
-							<option value="">
+						<input type="text" class="form-control my-2" placeholder="Nombres Completos" id="nombres" name="nombres" >
+						<input type="text" class="form-control my-2" placeholder="Email" id="correo" name="correo" >
+						<input type="text" class="form-control my-2" placeholder="Asunto" id="asunto" name="asunto" >
+						<select class="form-control my-2 " id="servicio" name="servicio" >
+							<option>
 								Seleccione el tipo de servicio que desea
 							</option>
-							<option value="soporte">
+							<option>
 								Soporte
 							</option>
-							<option value="asesoria">
+							<option>
 								Asesoría
 							</option>
-							<option value="clase gratis">
+							<option>
 								Primer Clase Gratis
 							</option>
 						</select>
-						<textarea class="form-control" name="mensaje" id="mensaje" rows="5" placeholder="Escriba su mensaje..." name="mensaje"></textarea>
+						<textarea class="form-control" rows="5" placeholder="Escriba su mensaje..." id="mensaje"  name="mensaje"></textarea>
 						<div class="row justify-content-center my-2">
 							<button type="submit"  class="btn fondo-naranja blanco" id="btn-enviar">
 								Enviar Mensaje
