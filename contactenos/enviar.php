@@ -25,8 +25,8 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 }else{
 
 
-    require '/src/libs/phpmailer/class.phpmailer.php';
-    require '/src/libs/phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
+    require '../src/libs/phpmailer/class.phpmailer.php';
+    require '../src/libs/phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
     $mail = new PHPMailer();
 
     $mail->From     = $Email;
@@ -59,7 +59,7 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     echo "<script>swal('Error', 'Será redireccionado en breve...', 'error');location.href ='http://localhost/contactenos/';</script>";
 
 }
-header('Location: http://localhost/contactenos/');
+header('Location: https://funtraining.net/contactenos/');
 
 ?>
 </body>
