@@ -6,17 +6,21 @@ main.row{
     background: #ff6d00;
     color: #fff;
      background: #ff6d00;
-     /* -webkit-transform: skew(-20deg);
+     padding: 10px 20px;
+     -webkit-transform: skew(-20deg);
      -moz-transform: skew(-20deg);
      -ms-transform: skew(-20deg);
      -o-transform: skew(-20deg);
-     transform: skew(-20deg); */
+     transform: skew(-20deg);
+}
+.btn-perfil-entrenador img{
+    transform: skew(10deg);
 }
 .trainer-card{
     margin-bottom: 20px !important;
 }
-.trainer-card img{
-    max-width: 150px;
+.trainer-card .img-coach{
+    height: 150px;
 }
 
 hr{
@@ -27,10 +31,10 @@ h2{
     font-size: 18px;
 }
 
-/* .logo-btn{
-    width: 96px;
-    height: 96px;
-} */
+
+.img-puno{
+    width: 100px;
+}
 
 @media screen and (min-width: 768px){
     h2{

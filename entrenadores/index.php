@@ -32,50 +32,50 @@
                     <div class="col-10">
                         <div class="row justify-content-center align-items-center">
                             <div class="trainer-card col-md-3 text-center">
-                                <img src="/src/img/entrenadores/John-Fredy-Gonzalez-Bonilla.png" alt="">
+                                <img src="/src/img/entrenadores/John-Fredy-Gonzalez-Bonilla.png" alt="" class="img-coach">
                                 <h5>John Gonzáles</h5>
                                 <p class="gris">
                                     Gerente Deportivo
                                 </p>
                                 <hr>
                                 <button class="btn btn-perfil-entrenador">
-                                    <img src="/src/img/logo.png" alt="" class="logo-btn">
+                                    <img src="/src/img/plan.svg" alt="" class="img-puno">
                                 </button>
                             </div>
         
                             <div class="trainer-card col-md-3 text-center">
-                                <img src="/src/img/entrenadores/Helman-Alfonzo-Rodriguez.png" alt="">
+                                <img src="/src/img/entrenadores/Helman-Alfonzo-Rodriguez.png" alt="" class="img-coach">
                                 <h5>Helman Rodríguez</h5>
                                 <p class="gris">
                                     Coach
                                 </p>
                                 <hr>
                                 <button class="btn btn-perfil-entrenador">
-                                    <img src="/src/img/logo.png" alt="" class="logo-btn">
+                                    <img src="/src/img/plan.svg" alt="" class="img-puno">
                                 </button>
                             </div>
         
                             <div class="trainer-card col-md-3 text-center">
-                                <img src="/src/img/entrenadores/Diana-Nieto.png" alt="">
+                                <img src="/src/img/entrenadores/Diana-Nieto.png" alt="" class="img-coach">
                                 <h5>Diana Nieto</h5>
                                 <p class="gris">
                                     Coach & Atleta de competencia
                                 </p>
                                 <hr>
                                 <button class="btn btn-perfil-entrenador">
-                                    <img src="/src/img/logo.png" alt="" class="logo-btn">
+                                    <img src="/src/img/plan.svg" alt="" class="img-puno">
                                 </button>
                             </div>
         
                             <div class="trainer-card col-md-3 text-center">
-                                <img src="/src/img/entrenadores/Camilo-cardenas.png" alt="">
+                                <img src="/src/img/entrenadores/Camilo-cardenas.png" alt="" class="img-coach">
                                 <h5>Camilo Cárdenas</h5>
                                 <p class="gris">
                                     Coach & Entrenador Personal
                                 </p>
                                 <hr>
                                 <button class="btn btn-perfil-entrenador">
-                                    <img src="/src/img/logo.png" alt="" class="logo-btn">
+                                    <img src="/src/img/plan.svg" alt="" class="img-puno">
                                 </button>
                             </div>
                         </div>
