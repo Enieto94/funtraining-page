@@ -56,7 +56,7 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     if ($mail->Send())
     echo "<script>swal('Gracias por registrar sus datos', 'Será redireccionado en breve...', 'success');</script>";
     else
-    echo "<script>swal('Error', 'Será redireccionado en breve...', 'error');location.href ='http://localhost/contactenos/';</script>";
+    echo "<script>swal('Error', 'Será redireccionado en breve...', 'error');location.href ='https://funtraining.net/contactenos/';</script>";
 
 }
 header('Location: https://funtraining.net/contactenos/');

@@ -1,5 +1,5 @@
-const API_URL = 'http://localhost:8000/api';
-// const API_URL = 'https://api.funtraining.net/api';
+// const API_URL = 'http://localhost:8000/api';
+const API_URL = 'https://api.funtraining.net/api';
 
 $("#btn-resultado-container").click(function () {
 	if($("#estatura").val() === '' && $("#peso").val() === ''){
