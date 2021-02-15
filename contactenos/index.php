@@ -50,14 +50,12 @@
 							</option>
 						</select>
 						<textarea class="form-control" name="mensaje" id="mensaje" rows="5" placeholder="Escriba su mensaje..." name="mensaje"></textarea>
-					</form>
-					<div class="col-12 my-2">
-						<div class="row justify-content-center">
-							<button class="btn fondo-naranja blanco" type="submit2" id="btn-enviar">
+						<div class="row justify-content-center my-2">
+							<button class="btn fondo-naranja blanco" type="submit" id="btn-enviar">
 								Enviar Mensaje
 							</button>
 						</div>
-					</div>
+					</form>
 				</section>
 			</div>
 		</main>
