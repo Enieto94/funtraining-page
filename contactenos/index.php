@@ -52,7 +52,7 @@
 					</form>
 					<div class="col-12 my-2">
 						<div class="row justify-content-center">
-							<button class="btn fondo-naranja blanco" id="btn-enviar">
+							<button class="btn fondo-naranja blanco" type="submit" id="btn-enviar">
 								Enviar Mensaje
 							</button>
 						</div>
