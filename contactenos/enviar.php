@@ -25,13 +25,13 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 }else{
 
 
-    require '../src/libs/phpmailer/class.phpmailer.php';
-    require '../src/libs/phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
+    require $_SERVER["DOCUMENT_ROOT"].'/src/libs/phpmailer/class.phpmailer.php';
+    require $_SERVER["DOCUMENT_ROOT"].'/src/libs/phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
     $mail = new PHPMailer();
 
     $mail->From     = $Email;
     $mail->FromName = $Nombre; 
-    $mail->AddAddress("egnieto94@gmail.com"); // Dirección a la que llegaran los mensajes.
+    $mail->AddAddress("contacto@funtraining.net"); // Dirección a la que llegaran los mensajes.
    
 // Aquí van los datos que apareceran en el correo que reciba
             
@@ -46,12 +46,12 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->CharSet = 'UTF-8';
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = "ssl";
-    $mail->Host = "smtp.gmail.com"; //servidor smtp, esto lo puedes dejar igual
+    $mail->Host = "mail.funtraining.net"; //servidor smtp, esto lo puedes dejar igual
     $mail->Port = 465; //puerto smtp de gmail, tambien lo puedes dejar igual
-    $mail->Username = 'egnieto94@gmail.com';  // Tu correo gmail
+    $mail->Username = 'contacto@funtraining.net';  // Tu correo gmail
     $mail->Password = '.Ykust649 _'; // Tu contrasena gmail
     $mail->FromName = 'edwin nieto'; // 
-    $mail->From = 'egnieto94@gmail.com'; //email de remitente desde donde se envía el correo, este caso para evitar spam es el mismo que tu correo gmail
+    $mail->From = 'contacto@funtraining.net'; //email de remitente desde donde se envía el correo, este caso para evitar spam es el mismo que tu correo gmail
     
     if ($mail->Send())
     echo "<script>swal('Gracias por registrar sus datos', 'Será redireccionado en breve...', 'success');</script>";
