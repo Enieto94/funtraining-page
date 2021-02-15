@@ -31,7 +31,7 @@
 						</div>
 					</div>
 
-					<form action="enviar.php" enctype="multipart/form-data" class="col-10 col-md-5" name="contactenos">
+					<form action="enviar.php" enctype="multipart/form-data" method="POST" name="contactenos" class="col-10 col-md-5" >
 						<input type="text" class="form-control my-2" placeholder="Nombres Completos" name="nombres" id="nombres">
 						<input type="text" class="form-control my-2" placeholder="Email" name="correo" id="correo">
 						<input type="text" class="form-control my-2" placeholder="Asunto" name="asunto" id="asunto">
@@ -51,7 +51,7 @@
 						</select>
 						<textarea class="form-control" name="mensaje" id="mensaje" rows="5" placeholder="Escriba su mensaje..." name="mensaje"></textarea>
 						<div class="row justify-content-center my-2">
-							<button class="btn fondo-naranja blanco" type="submit" id="btn-enviar">
+							<button type="submit"  class="btn fondo-naranja blanco" id="btn-enviar">
 								Enviar Mensaje
 							</button>
 						</div>
