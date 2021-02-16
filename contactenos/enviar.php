@@ -10,8 +10,6 @@
 
 <body>
 <?php
-
-
 $nombres = $_POST['nombres'];
 $correo = $_POST['correo'];
 $asunto = $_POST['asunto'];
@@ -25,8 +23,8 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 }else{
 
 
-    require 'phpmailer/class.phpmailer.php';
-    require 'phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
+    require '../src/libs/phpmailer/class.phpmailer.php';
+    require '../src/libs/phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
     $mail = new PHPMailer();
 
     $mail->From     = $Email;
@@ -39,7 +37,6 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->IsHTML(true);     
     $mail->Subject  =  "Contacto";
     $mail->Body     =  "<table border='1'><tr><td>Nombres:</td><td>".$nombres."</td></tr><tr><td>Apellidos:</td><td>".$correo."</td></tr><tr><td>Area:</td><td>".$asunto."</td></tr><tr><td>Departamento:</td><td>".$servicio."</td></tr><tr><td>Ciudad:</td><td>".$mensaje."</td></tr><tr><td>Tarjeta profesional:</td>"."</table>";
-
 // Datos del servidor SMTP
 
     $mail->IsSMTP();
@@ -56,7 +53,7 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     if ($mail->Send())
     echo "<script>swal('Gracias por registrar sus datos', 'Será redireccionado en breve...', 'success');</script>";
     else
-    echo "<script>swal('Error', 'Será redireccionado en breve...', 'error');location.href ='https://funtraining.net/contactenos/';</script>";
+    echo "<script>swal('Error', 'Será redireccionado en breve...', 'error');location.href ='http://localhost/contactenos/';</script>";
 
 }
 header('Location: https://funtraining.net/contactenos/');
