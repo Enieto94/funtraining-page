@@ -261,6 +261,7 @@ cite span.cita-1.azul:before {
 .cita-2 {
     position: absolute;
     top: 5%;
+    left: 0;
     color: #fff;
     font-weight: 700;
     text-align: center;
@@ -428,10 +429,6 @@ img.estrella {
     }
 }
 @media screen and (min-height: 768px) {
-    .cita-2 {
-        top: 13%;
-        left: 15%;
-    }
     .trapecio {
         border-bottom: 600px solid #232323;
     }
