@@ -203,7 +203,7 @@ input {
 .btn-comprar:hover{
     transform: scale(1.1);
     background: #ff6d00;
-    color: #fff;
+    color: #fff !important;
     transition: ease-in-out 0.3s;
 }
 .btn-comprar:hover svg path{
@@ -350,7 +350,7 @@ img.estrella {
     }
     #logo-banner {
         width: 400px;
-        margin-bottom: -225px;
+        margin-bottom: -300px;
         position: absolute;
         z-index: 1;
     }

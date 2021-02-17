@@ -21,6 +21,7 @@ main.row{
 }
 .trainer-card .img-coach{
     height: 150px;
+    border-radius: 50%;
 }
 
 hr{

@@ -756,7 +756,7 @@
 						<div class="row">
 							<div class="d-flex flex-column w-100 pos-relative">
 
-								<img class="img-responsive" src="/src/img/PL2.jpg" alt="Funtraining Plan Power"
+								<img class="img-responsive" src="/src/img/PL3.jpg" alt="Funtraining Plan Power"
 									title="Funtraining Plan Power">
 
 								<div class="plan-description d-flex flex-column align-items-center">
@@ -912,7 +912,7 @@
 						<div class="row">
 							<div class="d-flex flex-column w-100 pos-relative">
 
-								<img class="img-responsive" src="/src/img/PL2.jpg" alt="Funtraining Plan Power"
+								<img class="img-responsive" src="/src/img/PL1.jpg" alt="Funtraining Plan Power"
 									title="Funtraining Plan Power">
 
 								<div class="plan-description d-flex flex-column align-items-center">
