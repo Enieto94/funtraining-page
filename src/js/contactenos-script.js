@@ -18,29 +18,28 @@ $("#contactenos").submit(function () {
     } else if (mensaje == "") {
         $("#mensaje").notify("El campo no debe ir vacío", { position: "right" });
     } else {
-        swal("¡Gracias!", "Hemos recibido tu información", "success");
+        axios({
+            method: 'post',
+            url: '../../contactenos/enviar.php',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: {
+                nombres,
+                correo,
+                asunto,
+                servicio,
+                mensaje
+            }
+        })
+            .then(response => response.json() )
+            .then(function (data) {
+                // swal("¡Gracias!", "Hemos recibido tu información", "success");
+                console.log(data);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
 
-
-
-    axios({
-        method: 'post',
-        url: '../../contactenos/enviar.php',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        data: {
-            nombres,
-            correo,
-            asunto,
-            servicio,
-            mensaje
-        }
-    })
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
 });
