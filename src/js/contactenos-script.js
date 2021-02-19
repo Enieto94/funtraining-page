@@ -2,10 +2,10 @@ $("#contactenos").submit(function () {
     event.preventDefault();
 
     const nombres = $("#nombres").val();
-    const correo = $("#nombres").val();
-    const asunto = $("#nombres").val();
-    const servicio = $("#nombres").val();
-    const mensaje = $("#nombres").val();
+    const correo = $("#correo").val();
+    const asunto = $("#asunto").val();
+    const servicio = $("#servicio").val();
+    const mensaje = $("#mensaje").val();
 
     if (nombres == "") {
         $("#nombres").notify("El campo no debe ir vacío", { position: "right" });
@@ -17,15 +17,18 @@ $("#contactenos").submit(function () {
         $("#servicio").notify("El campo no debe ir vacío", { position: "right" });
     } else if (mensaje == "") {
         $("#mensaje").notify("El campo no debe ir vacío", { position: "right" });
-    }else {
+    } else {
         swal("¡Gracias!", "Hemos recibido tu información", "success");
     }
 
-    
+
 
     axios({
         method: 'post',
         url: '../../contactenos/enviar.php',
+        headers: {
+            'Content-Type': 'application/json'
+        },
         data: {
             nombres,
             correo,
@@ -34,10 +37,10 @@ $("#contactenos").submit(function () {
             mensaje
         }
     })
-    .then(function (response) {
-        console.log(response);
-    })
-    .catch(function (error) {
-        console.log(error);
-    });
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 });
