@@ -31,7 +31,7 @@
 						</div>
 					</div>
 
-					<form action="enviar.php" enctype="multipart/form-data" method="POST" name="contactenos" class="col-10 col-md-5" >
+					<form name="contactenos" class="col-10 col-md-5" id="contactenos" >
 						<input type="text" class="form-control my-2" placeholder="Nombres Completos" id="nombres" name="nombres" >
 						<input type="text" class="form-control my-2" placeholder="Email" id="correo" name="correo" >
 						<input type="text" class="form-control my-2" placeholder="Asunto" id="asunto" name="asunto" >

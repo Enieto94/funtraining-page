@@ -66,6 +66,7 @@ cite {
 a,
 a:hover {
     text-decoration: none;
+    color: #fff;
 }
 
 .fondo-azul {

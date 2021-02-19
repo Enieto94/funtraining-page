@@ -1,18 +1,43 @@
-
-$("#btn-enviar").click(function () {
+$("#contactenos").submit(function () {
     event.preventDefault();
-    if ($("#nombres").val() == "") {
+
+    const nombres = $("#nombres").val();
+    const correo = $("#nombres").val();
+    const asunto = $("#nombres").val();
+    const servicio = $("#nombres").val();
+    const mensaje = $("#nombres").val();
+
+    if (nombres == "") {
         $("#nombres").notify("El campo no debe ir vacío", { position: "right" });
-    } else if ($("#correo").val() == "") {
+    } else if (correo == "") {
         $("#correo").notify("El campo no debe ir vacío", { position: "right" });
-    } else if ($("#asunto").val() == "") {
+    } else if (asunto == "") {
         $("#asunto").notify("El campo no debe ir vacío", { position: "right" });
-    } else if ($("#servicio").val() == "") {
+    } else if (servicio == "") {
         $("#servicio").notify("El campo no debe ir vacío", { position: "right" });
-    } else if ($("#mensaje").val() == "") {
+    } else if (mensaje == "") {
         $("#mensaje").notify("El campo no debe ir vacío", { position: "right" });
     }else {
-        swal("Gracias por registrar sus datos", "Será redireccionado en breve...", "success");
-        document.contactenos.submit();
+        swal("¡Gracias!", "Hemos recibido tu información", "success");
     }
+
+    
+
+    axios({
+        method: 'post',
+        url: '../../contactenos/enviar.php',
+        data: {
+            nombres,
+            correo,
+            asunto,
+            servicio,
+            mensaje
+        }
+    })
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
 });

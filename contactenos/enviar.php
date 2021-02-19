@@ -1,63 +1,68 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?php 
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+function enviarMsj()
+{
+    require_once '../vendor/autoload.php';
 
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    try {
+        // Se envía el correo
 
-<title>Formulario</title>
+        $mail_HTML = '<table style="height: 43px; margin-left: auto; margin-right: auto;" border="1px solid #FD551" width="700">
+							<tbody>
+							<tr style="height: 37px;">
+							<td style="width: 323.295px; height: 37px;"><span style="color: #000000;"><strong>nombre:</strong></span></td>
+							<td style="width: 333.295px; height: 37px;">' . $_POST['nombres'] . '</td>
+							</tr>
+							<tr style="height: 37px;">
+							<td style="width: 323.295px; height: 37px;"><span style="color: #000000;"><strong>Correo:</strong></span></td>
+							<td style="width: 333.295px; height: 37px;">' . $_POST['correo'] . '</td>
+							</tr>
+							<tr style="height: 37px;">
+							<td style="width: 323.295px; height: 37px;"><span style="color: #000000;"><strong>Mensaje:</strong></span></td>
+							<td style="width: 333.295px; height: 37px;">' . $_POST['asunto'] . '</td>
+							</tr>
+							<tr style="height: 37px;">
+							<td style="width: 323.295px; height: 37px;"><span style="color: #000000;"><strong>Mensaje:</strong></span></td>
+							<td style="width: 333.295px; height: 37px;">' . $_POST['servicio'] . '</td>
+							</tr>
+							<tr style="height: 37px;">
+							<td style="width: 323.295px; height: 37px;"><span style="color: #000000;"><strong>Mensaje:</strong></span></td>
+							<td style="width: 333.295px; height: 37px;">' . $_POST['mensaje'] . '</td>
+							</tr>
+							</tbody>
+							</table>
+							<p style="text-align: center;">&nbsp;</p>
+							<p style="text-align: center;"><span style="color: #000000;"><strong>Este mensaje fu&eacute; generado desde Funtraining</strong></span></p>';
 
-</head>
+            $mail = new PHPMailer;
+            $mail->Host = "localhost";
+            $mail->From = $_POST['correo'];
+            $mail->FromName = "Contacto Funtraining";
+            $mail->addAddress("contacto@funtraining.net");
+            $mail->addAddress("egnieto94@gmail.com");
 
-<body>
-<?php
-$nombres = $_POST['nombres'];
-$correo = $_POST['correo'];
-$asunto = $_POST['asunto'];
-$servicio = $_POST['servicio'];
-$mensaje = $_POST['mensaje'];
+            $mail->CharSet = 'UTF-8';
+            $mail->Subject = ("¡Contacto Funtraining!");
+            $mail->MsgHTML($mail_HTML);
 
-if ($nombres == '' || $correo == '' || $asunto == ''|| $servicio == ''|| $mensaje == ''){ 
+            if ($mail->Send()) {
 
-echo "<script>alert('Los campos marcados con * son obligatorios');location.href ='javascript:history.back()';</script>";
+                $jsonResponse = array(
+                    'respuesta' => "ok",
+                    'mensaje' => 'mensaje enviado',
+                );
+            } else {
+                $jsonResponse = array(
+                    'respuesta' => "error",
+                    'mensaje' => 'no se envio el email',
+                );
+            }
 
-}else{
 
-
-    require '../src/libs/phpmailer/class.phpmailer.php';
-    require '../src/libs/phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
-    $mail = new PHPMailer();
-
-    $mail->From     = $Email;
-    $mail->FromName = $Nombre; 
-    $mail->AddAddress("contacto@funtraining.net"); // Dirección a la que llegaran los mensajes.
-   
-// Aquí van los datos que apareceran en el correo que reciba
-            
-    $mail->WordWrap = 50; 
-    $mail->IsHTML(true);     
-    $mail->Subject  =  "Contacto";
-    $mail->Body     =  "<table border='1'><tr><td>Nombres:</td><td>".$nombres."</td></tr><tr><td>Apellidos:</td><td>".$correo."</td></tr><tr><td>Area:</td><td>".$asunto."</td></tr><tr><td>Departamento:</td><td>".$servicio."</td></tr><tr><td>Ciudad:</td><td>".$mensaje."</td></tr><tr><td>Tarjeta profesional:</td>"."</table>";
-// Datos del servidor SMTP
-
-    $mail->IsSMTP();
-    $mail->CharSet = 'UTF-8';
-    $mail->SMTPAuth = true;
-    $mail->SMTPSecure = "ssl";
-    $mail->Host = "mail.funtraining.net"; //servidor smtp, esto lo puedes dejar igual
-    $mail->Port = 465; //puerto smtp de gmail, tambien lo puedes dejar igual
-    $mail->Username = 'contacto@funtraining.net';  // Tu correo gmail
-    $mail->Password = 'NVeKfxA1m^G1'; // Tu contrasena gmail
-    $mail->FromName = 'Contacto Funtraining'; // 
-    $mail->From = 'contacto@funtraining.net'; //email de remitente desde donde se envía el correo, este caso para evitar spam es el mismo que tu correo gmail
-    
-    if ($mail->Send())
-    echo "<script>swal('Gracias por registrar sus datos', 'Será redireccionado en breve...', 'success');</script>";
-    else
-    echo "<script>swal('Error', 'Será redireccionado en breve...', 'error');location.href ='http://localhost/contactenos/';</script>";
-
+        print_r(json_encode($jsonResponse));
+    } catch (Exception $e) {
+        print_r(json_encode(array('respuesta' => "error", 'mensaje' => "Surgió un error al enviar el correo. ")));
+    }
 }
-header('Location: https://funtraining.net/contactenos/');
-
 ?>
-</body>
-</html>
