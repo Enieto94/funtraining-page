@@ -17,9 +17,6 @@
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0" nonce="FHzIW7oC"></script>
-
     <div class="container-fluid">
         <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/src/commons/header.php' ;?>
 
@@ -74,7 +71,7 @@
                                 miembros de nuestra gran familia nos comparten. El principal objetivo de FUN TRAINING es
                                 el bienestar de los miembros de la familia y su opinión nos ayuda a estar más unidos y
                                 comprometidos con el mejoramiento continuo. Conócenos, <strong>se parte de esta gran
-                                    familia y danos tu opinión en nuestro fan page <a class="azul" href="https://facebook.com/funtraininggym/" target="_blank">@FUNTRAININGGYM</a></strong>
+                                    familia y danos tu opinión en nuestro fan page <a class="azul" href="https://www.facebook.com/funtraininggym/reviews/?ref=page_internal" target="_blank">@FUNTRAININGGYM</a></strong>
                             </p>
                         </div>
 
@@ -82,9 +79,6 @@
 
                 </section>
 
-                <section class="row justify-content-center">
-                 <div class="fb-comments" data-href="https://developers.facebook.com/funtraininggym" data-width="" data-numposts="5"></div>
-                </section>
 
                 <section class="row justify-content-around my-4">
                     <div class="col-md-4">
