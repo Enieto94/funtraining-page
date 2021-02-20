@@ -33,7 +33,7 @@
                         <div class="row justify-content-center align-items-center">
                             <div class="trainer-card col-md-3 text-center">
                                 <img src="/src/img/entrenadores/John-Fredy-Gonzalez-Bonilla.png" alt="" class="img-coach">
-                                <h5>John Gonzáles</h5>
+                                <h5>John González</h5>
                                 <p class="gris">
                                     Gerente Deportivo
                                 </p>

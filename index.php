@@ -562,13 +562,18 @@
 
 								<div class="plan-item py-3">
 
-									<p>Sesiones de entrenamiento funcional dirigido por mes.<strong>Sin restricciones.</strong></p>
+									<p>Sesiones de entrenamiento de 60 minutos. Múltiples horarios al día. <strong>Sin restricciones.</strong></p>
 
 								</div>
 
 								<div class="plan-item py-3">
 
 									<p><strong>Mejora capacidades física</strong> (Resistencia, Fuerza, Velocidad y Movilidad)</p>
+
+								</div>
+								<div class="plan-item py-3">
+
+									<p>Disfruta de la variedad en los horarios desde las 5 de la mañana hasta las 10 de la noche. </p>
 
 								</div>
 
@@ -846,7 +851,7 @@
 
 									<span class="blanco mb-0"><strong>FUN TRAINING</strong></span>
 
-									<span class="naranja text-center"><strong>PERSONAL ADVICE SESSION</strong></span>
+									<span class="naranja text-center"><strong>PERSONAL ADVICE <h4>(Asesoría personalizada)</h4></strong></span>
 
 								</div>
 							</div>
@@ -880,8 +885,8 @@
 								</div>
 								<div class="plan-item py-3">
 
-									<p>Entrenamientos acordes a tus necesidades y disponibilidad detiempo. Disfruta de
-										tiempo. Disfruta de 9, 12 o 16 sesiones de entrenamiento en el mes. Con el
+									<p>Entrenamientos acordes a tus necesidades y disponibilidad de tiempo. Disfruta de
+										tiempo. Disfruta de 8, 12 o 16 sesiones de entrenamiento en el mes. Con el
 										profesional que desees de nuestra familia y elige la hora del día en la que
 										prefieres realizarlo.</p>
 
@@ -1161,7 +1166,7 @@
 							<h3 class="mt-2">
 
 								Lo que te impulsa, lo que más te motiva, <span class="azul">
-									es el deseo de encontrar tus límites, y
+									es el deseo de encontrar tus límites y
 									extenderlos.
 								</span>
 
