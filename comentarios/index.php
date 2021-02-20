@@ -74,13 +74,16 @@
                                 miembros de nuestra gran familia nos comparten. El principal objetivo de FUN TRAINING es
                                 el bienestar de los miembros de la familia y su opinión nos ayuda a estar más unidos y
                                 comprometidos con el mejoramiento continuo. Conócenos, <strong>se parte de esta gran
-                                    familia y danos tu opinión en nuestro fan page</strong> FUN TRANING GYM. <strong
-                                    class="naranja">FUN TRANING GYM</strong>
+                                    familia y danos tu opinión en nuestro fan page <a class="azul" href="https://facebook.com/funtraininggym/" target="_blank">@FUNTRAININGGYM</a></strong>
                             </p>
                         </div>
 
                     </div>
 
+                </section>
+
+                <section class="row justify-content-center">
+                 <div class="fb-comments" data-href="https://developers.facebook.com/funtraininggym" data-width="" data-numposts="5"></div>
                 </section>
 
                 <section class="row justify-content-around my-4">
@@ -112,9 +115,7 @@
                     </div>
                 </section>
 
-                <section class="row">
-                 <div class="fb-comments" data-href="https://developers.facebook.com/funtraininggym" data-width="" data-numposts="5"></div>
-                </section>
+              
             </div>
         </main>
 
