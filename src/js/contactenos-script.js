@@ -32,7 +32,7 @@ $("#contactenos").submit(function () {
                 mensaje
             }
         })
-            .then(response => response.parse() )
+            .then(response => JSON.parse(response) )
             .then(function (data) {
                 // swal("¡Gracias!", "Hemos recibido tu información", "success");
                 console.log(data);

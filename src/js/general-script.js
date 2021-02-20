@@ -1,5 +1,5 @@
-// const API_URL = 'http://localhost:8000/api';
-const API_URL = 'https://api.funtraining.net/api';
+const API_URL = 'http://localhost:8000/api';
+// const API_URL = 'https://api.funtraining.net/api';
 
 $("#btn-resultado-container").click(function () {
 	if($("#estatura").val() === '' && $("#peso").val() === ''){
@@ -46,9 +46,10 @@ $('#btnEnviar').click(async function (e) {
 	let nombre = $('#nombre').val();
 	nombre.toUpperCase();
 	const correo = $('#correo').val();
-
+	const cellphone = $('#celular').val();
+	
 	try {
-		const serverResponse = await axios.post(`${API_URL}/newsletterusers`, { name: nombre, email: correo });
+		const serverResponse = await axios.post(`${API_URL}/newsletterusers`, { name: nombre, email : correo, cellphone: cellphone});
 		swal("Datos registrados", `Hola ${serverResponse.data.name}, gracias por suscribirte a nuestro newsletter`, "success");
 
 	} catch (error) {
@@ -59,4 +60,5 @@ $('#btnEnviar').click(async function (e) {
 			text: "Ha surgido un error interno, intentalo mas tarde"
 		});
 	}
+	$('input').val("");
 });

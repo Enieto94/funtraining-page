@@ -37,8 +37,9 @@
 					<h3 class="naranja my-2">HAZ TU PREREGISTRO</h3>
 					<div class="row justify-content-center">
 						<div class="col-md-8">
-							<input class="form-control my-2" type="text" name="" id="nombre" placeholder="Nombres y apellidos">
-							<input class="form-control my-2" type="email" name="" id="correo" placeholder="Correo electrónico">
+							<input class="form-control my-2" type="text" name="nombre" id="nombre" placeholder="Nombres y apellidos">
+							<input class="form-control my-2" type="email" name="correo" id="correo" placeholder="Correo electrónico">
+							<input class="form-control my-2" type="text" name="celular" id="celular" placeholder="Número de celular">
 						</div>
 					</div>
 					<div class="row justify-content-center">
@@ -1026,7 +1027,7 @@
 
 			</div>
 
-
+2
 
 			<!-- <section class="col-12 my-5">
 
