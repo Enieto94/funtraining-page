@@ -68,6 +68,10 @@ a:hover {
     text-decoration: none;
     color: #fff;
 }
+.azul:hover{
+    color: #ff6d00;
+    transition: ease-in-out all 0.3s;
+}
 
 .fondo-azul {
     background-color: #0bc9ff;
