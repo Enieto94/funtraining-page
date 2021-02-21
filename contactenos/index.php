@@ -31,7 +31,7 @@
 						</div>
 					</div>
 
-					<form action="" method="post" class="col-10 col-md-5" id="contactenos"  >
+					<form class="col-10 col-md-5" id="contactenos">
 						<input type="text" class="form-control my-2" placeholder="Nombres Completos" id="nombres" name="nombres" >
 						<input type="text" class="form-control my-2" placeholder="Email" id="correo" name="correo" >
 						<input type="text" class="form-control my-2" placeholder="Asunto" id="asunto" name="asunto" >
@@ -65,7 +65,7 @@
 		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/src/commons/common-scripts-caller.php';?>
 		<script src="/src/libs/notify/notify.min.js"></script>
 		<script src="/src/libs/sweet-alert/sweet-alert.min.js"></script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>		 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>		
 		<script src="/src/js/contactenos-script.js"></script>
 	</div>
 
