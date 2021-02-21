@@ -23,7 +23,7 @@ $mensaje = $_POST['mensaje'];
 
     $mail->From     = $correo;
     $mail->FromName = $nombres; 
-    $mail->AddAddress("egnieto94@gmail.com"); // Dirección a la que llegaran los mensajes.
+    $mail->AddAddress("funtraininggym@gmail.com"); // Dirección a la que llegaran los mensajes.
    
 // Aquí van los datos que apareceran en el correo que reciba
             
