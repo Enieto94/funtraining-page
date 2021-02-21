@@ -12,7 +12,7 @@
 
 	<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/src/commons/common-styles-caller.php';?>
 
-	<link rel="stylesheet" href="/src/css/contacetnos-style.min.css">
+	<link rel="stylesheet" href="/src/css/contactenos-style.min.css">
 
 
 </head>
@@ -31,7 +31,7 @@
 						</div>
 					</div>
 
-					<form class="col-10 col-md-5" id="contactenos">
+					<form action="./enviar.php" name="contactenos" enctype="multipart/form-data" method="post" class="col-10 col-md-5" id="contactenos" >
 						<input type="text" class="form-control my-2" placeholder="Nombres Completos" id="nombres" name="nombres" >
 						<input type="text" class="form-control my-2" placeholder="Email" id="correo" name="correo" >
 						<input type="text" class="form-control my-2" placeholder="Asunto" id="asunto" name="asunto" >

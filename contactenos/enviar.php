@@ -15,17 +15,10 @@ $nombres = $_POST['nombres'];
 $correo = $_POST['correo'];
 $asunto = $_POST['asunto'];
 $servicio = $_POST['servicio'];
-$archivo = $_FILES['adjunto'];
+$mensaje = $_POST['mensaje'];
 
-if ($nombres=='' || $coreo=='' || $asunto=='' || $servicio=='' || $archivo==''){ 
-
-echo "<script>alert('Los campos marcados con * son obligatorios');location.href ='javascript:history.back()';</script>";
-
-}else{
-
-
-    require 'phpmailer/class.phpmailer.php';
-    require 'phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
+    require '../vendor/phpmailer/class.phpmailer.php';
+    require '../vendor/phpmailer/class.smtp.php'; //incluimos la clase para envíos por SMTP
     $mail = new PHPMailer();
 
     $mail->From     = $correo;
@@ -37,11 +30,9 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->WordWrap = 50; 
     $mail->IsHTML(true);     
     $mail->Subject  =  "Contacto";
-    $mail->Body     =  "Nombre: $nombres \n<br />".    
+    $mail->Body     =  "<table border='1'><tr><th>Nombres</th><th>correo</th><th>Asunto</th><th>Servicio</th><th>Mensaje</th></tr><tr>"."<td>$nombres</td><td>$correo</td><td>$asunto</td><td>$servicio</td><td>$mensaje</td></table> \n<br />".    
     "Email: $correo \n<br />".    
-    "Mensaje: $mensaje \n<br />";
-    $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);   
-    
+    "Mensaje: $mensaje \n<br />";    
     
 
 // Datos del servidor SMTP
@@ -52,17 +43,15 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->SMTPSecure = "ssl";
     $mail->Host = "smtp.gmail.com"; //servidor smtp, esto lo puedes dejar igual
     $mail->Port = 465; //puerto smtp de gmail, tambien lo puedes dejar igual
-    $mail->Username = 'egnieto94@gmail.com';  // Tu correo gmail
-    $mail->Password = '.Ykust649 _'; // Tu contrasena gmail
+    $mail->Username = 'contactofuntraining@gmail.com';  // Tu correo gmail
+    $mail->Password = 'Funtraining2021.'; // Tu contrasena gmail
     $mail->FromName = 'Contacto funtraining'; // 
-    $mail->From = 'egnieto94@gmail.com'; //email de remitente desde donde se envía el correo, este caso para evitar spam es el mismo que tu correo gmail
+    $mail->From = 'contactofuntraining@gmail.com'; //email de remitente desde donde se envía el correo, este caso para evitar spam es el mismo que tu correo gmail
     
-    if ($mail->Send())
-    echo "<script>alert('Formulario enviado exitosamente, le responderemos lo más pronto posible.');location.href ='javascript:history.back()';</script>";
-    else
-    echo "<script>alert('Error al enviar el formulario');location.href ='javascript:history.back()';</script>";
+    $mail->Send();
 
-}
+    header("Location: https://funtraining.net/contactenos/");
+
 
 ?>
 </body>

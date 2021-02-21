@@ -1032,8 +1032,6 @@
 
 			</div>
 
-2
-
 			<!-- <section class="col-12 my-5">
 
 				<div class="row justify-content-center">

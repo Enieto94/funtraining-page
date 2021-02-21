@@ -36,6 +36,7 @@
 /* General styles */
 body {
     font-family: "Montserrat-Medium";
+    background-color: #f3f3f3;
 }
 
 h1,
@@ -222,9 +223,6 @@ ul {
  
 }
 
-#form-container{
-    background: #f3f3f3;
-}
 @media screen and (min-width: 768px) {
     #burger-menu{
         display: none;

@@ -1,6 +1,5 @@
-$("#contactenos").submit(function () {
+$("#contactenos").submit(function (event) {
     event.preventDefault();
-
     const nombres = $("#nombres").val();
     const correo = $("#correo").val();
     const asunto = $("#asunto").val();
@@ -18,28 +17,8 @@ $("#contactenos").submit(function () {
     } else if (mensaje == "") {
         $("#mensaje").notify("El campo no debe ir vacío", { position: "right" });
     } else {
-        axios({
-            method: 'post',
-            url: '../../contactenos/enviar.php',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            data: {
-                nombres,
-                correo,
-                asunto,
-                servicio,
-                mensaje
-            }
-        })
-            .then(response => response )
-            .then(function (data) {
-                // swal("¡Gracias!", "Hemos recibido tu información", "success");
-                console.log(data);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+        swal("¿Correo Enviado!", "Tu solicitud ha sido enviada, ¡Responderemos lo más pronto posible!", "success");
+        document.contactenos.submit();
     }
 
 });
