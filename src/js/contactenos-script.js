@@ -17,8 +17,8 @@ $("#contactenos").submit(function (event) {
     } else if (mensaje == "") {
         $("#mensaje").notify("El campo no debe ir vacío", { position: "right" });
     } else {
-        swal("¿Correo Enviado!", "Tu solicitud ha sido enviada, ¡Responderemos lo más pronto posible!", "success");
         document.contactenos.submit();
+        swal("¿Correo Enviado!", "Tu solicitud ha sido enviada, ¡Responderemos lo más pronto posible!", "success");
     }
 
 });
