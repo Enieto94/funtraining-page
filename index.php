@@ -8,11 +8,27 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<meta property="og:type" content="article" />
+
+	<meta property="og:title" content="Fun Training" />
+
+	<meta property="og:description" content="En FUN TRAINING brindamos productos y servicios de Entrenamieto Presencial y Online que contribuyen con el desarrollo integral del cuerpo y la mente, a través de programas que promueven el bienestar y mejoran la calidad de vida de cada uno de los integrantes de nuestra gran familia." />
+	<span class="naranja"></span> <span class="azul"></span> 
+
+	<meta property="og:image" content="https://funtraining.net/src/img/01.jpg" />
+
+	<meta property="og:url" content="https://funtraining.net" />
+
+	<meta property="og:site_name" content="Fun Training" />
+
+
 	<title>Inicio - Funtraining</title>
 
 	<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/src/commons/common-styles-caller.php';?>
 
 	<link rel="stylesheet" href="/src/css/index-style.css">
+
+	
 
 </head>
 
