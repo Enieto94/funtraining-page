@@ -15,7 +15,7 @@
 	<meta property="og:description" content="En FUN TRAINING brindamos productos y servicios de Entrenamieto Presencial y Online que contribuyen con el desarrollo integral del cuerpo y la mente, a través de programas que promueven el bienestar y mejoran la calidad de vida de cada uno de los integrantes de nuestra gran familia." />
 	<span class="naranja"></span> <span class="azul"></span> 
 
-	<meta property="og:image" content="https://funtraining.net/src/img/01.jpg" />
+	<meta property="og:image" content="https://funtraining.net/src/img/W3.jpg" />
 
 	<meta property="og:url" content="https://funtraining.net" />
 
