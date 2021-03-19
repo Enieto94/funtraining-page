@@ -38,7 +38,7 @@
 
 		<li>
 
-			<a href="/" class="item-menu active" id="home">HOME</a>
+			<a href="/" class="item-menu" id="home">HOME</a>
 
 		</li>
 
