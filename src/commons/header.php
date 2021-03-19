@@ -38,25 +38,25 @@
 
 		<li>
 
-			<a href="/" class="item-menu active">HOME</a>
+			<a href="/" class="item-menu active" id="home">HOME</a>
 
 		</li>
 
 		<li>
 
-			<a href="/entrenadores/" class="item-menu">ENTRENADORES</a>
+			<a href="/entrenadores/" class="item-menu" id="entrenadores">ENTRENADORES</a>
 
 		</li>
 
 		<li>
 
-			<a href="/comentarios/" class="item-menu">COMENTARIOS</a>
+			<a href="/comentarios/" class="item-menu"  id="comentarios">COMENTARIOS</a>
 
 		</li>
 
 		<li>
 
-			<a href="/contactenos/" class="item-menu">CONTACTENOS</a>
+			<a href="/contactenos/" class="item-menu"  id="contactenos">CONTACTENOS</a>
 
 		</li>
 		
