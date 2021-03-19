@@ -62,6 +62,7 @@ $('#btnEnviar').click(async function (e) {
 	}
 	$('input').val("");
 });
+
 switch (window.location.href) {
 	case "https://funtraining.net/":
 		$('.item-menu').removeClass('active');
